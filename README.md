@@ -72,7 +72,7 @@ That way we can install schematics to our node_modules
 ```
 ### Execute `npm install` in order to add the schematics project under the node_modules
 
-## Step 6: Update our angular.json to reference our schematics
+## Step 7: Update our angular.json to reference our schematics
 
 ### angular.json
 ```json
@@ -82,4 +82,50 @@ That way we can install schematics to our node_modules
     "defaultCollection": "@rifo/my-cool-project-schematics"
   }
 }
+```
+
+## Step 8: update schematics collection.json
+
+- add `"extends": ["@schematics/angular"]`
+- replace the schematics object
+
+### schematics/src/collection.json after changes
+```json
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": ["@schematics/angular"],
+  "schematics": {
+    "component": {
+      "description": "Create a new component",
+      "factory": "./component/index#newComponent",
+      "schema": "./component/schema.json"
+    }
+  }
+}
+```
+
+## Step 9: change src/schematics folder name to component
+
+## Step 10: add schema.json file under  src/component 
+
+
+### schema.json
+```json
+{
+  "id": "SchematicsNewComponent",
+  "title": "New Component",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The component name.",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  },
+  "required": ["name"]
+}
+
 ```

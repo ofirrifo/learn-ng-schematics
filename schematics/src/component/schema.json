@@ -1,0 +1,16 @@
+{
+  "id": "SchematicsNewComponent",
+  "title": "New Component",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The component name.",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  },
+  "required": ["name"]
+}
