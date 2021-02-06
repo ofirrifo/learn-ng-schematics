@@ -10,4 +10,4 @@ This repo created in order to learn how to use angular Schematics with angular c
 ## Step 3: Create a blank schematics inside our project
 execute this command under the root folder 
 `schematics blank --name=schematics`
-once it done we should have schematics folder under the root project folder 
+once it's done we should have schematics folder under the root project folder 
