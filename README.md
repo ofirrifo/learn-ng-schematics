@@ -11,3 +11,17 @@ This repo created in order to learn how to use angular Schematics with angular c
 execute this command under the root folder 
 `schematics blank --name=schematics`
 once it's done we should have schematics folder under the root project folder 
+
+## Step 3: Add preinstall scripts in package.json file 
+In order to make sure the schematics node_modules exist we want to add
+preinstall script in the root folder under the package.json file.
+That way when someone clone our project and execute the `npm install` it will install the schematics dependencies.
+
+### package.json
+```json
+{
+  "scripts": {
+    "preinstall": "cd ./schematics && npm install"
+  }
+}
+```
