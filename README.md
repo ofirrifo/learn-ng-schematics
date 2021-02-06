@@ -42,6 +42,6 @@ That way when someone clone our project and execute the `npm install` it will in
 ### schematics/package.json
 ```json
 {
-  "name": "@rifo/my-cool-project"
+  "name": "@rifo/my-cool-project-schematics"
 }
 ```
