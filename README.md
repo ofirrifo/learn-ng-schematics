@@ -53,7 +53,8 @@ dependencies.
 }
 ```
 
-## Step 6: Add devDependencies to our local schematics project
+## Step 6: Add our schematics project to devDependencies in our root package.json
+That way we can install schematics to our node_modules
 
 ### root package.json
 
@@ -69,4 +70,4 @@ dependencies.
   }
 }
 ```
-
+### Execute `npm install` in order to add the schematics project under the node_modules
