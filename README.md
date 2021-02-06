@@ -140,3 +140,8 @@ by execute this command `cd schematics &&  npm run build`
 - On webstorm folder tree right click >> New >> Angular schematic...
 - Now we should see the component schematic option 
 - click on the component
+
+## Step 13: In case we are using file folder for template files
+IDE will show us red error on ts files. In order to fix it we should add suffix to the file name
+for example `__name@dasherize__.module.ts__tmpl__` after the `.ts` we added `__tmpl__`
+and in  the index.ts file we will replace `__tmpl__` with empty string
