@@ -133,3 +133,10 @@ That way we can install schematics to our node_modules
 ## Step 11: build our schematics
 
 by execute this command `cd schematics &&  npm run build`
+
+## Step 12: execute our schematics using webstorm
+
+- Note sometimes need to restart webstorm 
+- On webstorm folder tree right click >> New >> Angular schematic...
+- Now we should see the component schematic option 
+- click on the component
