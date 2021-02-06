@@ -108,7 +108,6 @@ That way we can install schematics to our node_modules
 
 ## Step 10: add schema.json file under  src/component 
 
-
 ### schema.json
 ```json
 {
@@ -129,3 +128,8 @@ That way we can install schematics to our node_modules
 }
 
 ```
+
+
+## Step 11: build our schematics
+
+by execute this command `cd schematics &&  npm run build`
