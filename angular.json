@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./node_modules/@rifo/my-cool-project-schematics/src/collection.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "ng-with-schematics"
+  "defaultProject": "ng-with-schematics",
+  "cli": {
+    "defaultCollection": "@rifo/my-cool-project-schematics"
+  }
 }

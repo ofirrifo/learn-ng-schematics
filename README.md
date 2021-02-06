@@ -71,3 +71,15 @@ That way we can install schematics to our node_modules
 }
 ```
 ### Execute `npm install` in order to add the schematics project under the node_modules
+
+## Step 6: Update our angular.json to reference our schematics
+
+### angular.json
+```json
+{
+  "$schema": "./node_modules/@rifo/my-cool-project-schematics/src/collection.json",
+  "cli": {
+    "defaultCollection": "@rifo/my-cool-project-schematics"
+  }
+}
+```
