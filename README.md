@@ -17,11 +17,31 @@ In order to make sure the schematics node_modules exist we want to add
 preinstall script in the root folder under the package.json file.
 That way when someone clone our project and execute the `npm install` it will install the schematics dependencies.
 
-### package.json
+### root package.json
 ```json
 {
   "scripts": {
     "preinstall": "cd ./schematics && npm install"
   }
+}
+```
+
+## Step 4: update package.json name
+
+### root package.json
+
+```json
+"name": "@rifo/my-cool-project",
+{
+  "scripts": {
+    "preinstall": "cd ./schematics && npm install"
+  }
+}
+```
+
+### schematics/package.json
+```json
+{
+  "name": "@rifo/my-cool-project"
 }
 ```
